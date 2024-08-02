@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Executar o algoritmo em um arquivo específico
+# Função para executar o algoritmo com um arquivo específico
 executar_algoritmo() {
     algoritmo=$1
     arquivo=$2
@@ -9,8 +9,10 @@ executar_algoritmo() {
     echo
 }
 
+# Compila o código
 g++ -o main main.cpp selection-sort.cpp insertion-sort.cpp
 
+# Limpa arquivos de log anteriores
 > selection_sort_log.txt
 > insertion_sort_log.txt
 > comparacao_log.txt
@@ -32,6 +34,7 @@ else
     echo "Tempos de execução (selection-sort vs insertion-sort)" > comparacao_log.txt
 
     for arquivo in instancias-num/*.in; do
+        # Extrai o tempo de execução para cada algoritmo
         selection_time=$(grep "$arquivo" selection_sort_log.txt | awk -F '; ' '{print $3}' | awk '{print $4}')
         insertion_time=$(grep "$arquivo" insertion_sort_log.txt | awk -F '; ' '{print $3}' | awk '{print $4}')
         echo "Instancia: $arquivo; Selection: $selection_time segundos; Insertion: $insertion_time segundos" >> comparacao_log.txt

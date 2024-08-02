@@ -1,6 +1,0 @@
-// compilar o programa completo
-$$ make
-$$ ./script.sh
-
-// compilar apenas uma instância (ex 10001.1)
-$$ ./script.sh insertion instancias-num/num.1000.1.in
