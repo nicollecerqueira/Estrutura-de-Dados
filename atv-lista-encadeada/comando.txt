@@ -1,0 +1,4 @@
+// rodar com g++
+    $ g++ -Wall -Wextra -std=c++11 -o lista-enc main.cpp lista-enc.cpp // -> compila
+    $ ./lista-enc  // -> executa
+    $ rm lista-enc  // -> limpa
