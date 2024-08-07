@@ -1,0 +1,9 @@
+# Comandos para testar a implementação C++
+make
+./lista-seq
+make clean
+
+# Comandos para testar a implementação Python
+make
+make run
+make clean
