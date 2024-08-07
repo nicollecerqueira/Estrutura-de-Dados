@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/LinkedList.cpp",
+                "-o",
+                "${workspaceFolder}/LinkedListProgram"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilação padrão para arquivos C++"
+        }
+    ]
+}
