@@ -1,10 +1,10 @@
-#include "fila_vetor.h"
+#include "fila_sequencial.h"
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    FilaVetor fila(4);
+    FilaSequencial fila(4);
 
     cout << "Adicionando elementos à fila..." << endl;
     fila.adicionarFim(1);
