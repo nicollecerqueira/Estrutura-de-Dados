@@ -1,0 +1,3 @@
+// para executar com g++:
+    $ g++ -o fila-vetor main.cpp fila_vetor.cpp
+    $ ./fila-vetor
