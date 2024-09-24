@@ -1,0 +1,3 @@
+# para rodar
+    $ python main.py pcv50.txt
+# Para os outros casos, basta trocar o nome do arquivo
